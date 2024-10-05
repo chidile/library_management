@@ -1,0 +1,18 @@
+### List all the users
+
+GET http://127.0.0.1:8000/api/users
+Content-Type: application/json
+Authorization: Basic "admin":"pass12345"
+{}
+
+### Add a user
+
+POST http://127.0.0.1:8000/api/users/
+Content-Type: application/json
+Authorization: Basic "admin":"pass12345"
+{
+    "username": "staff",
+    "email": "staff@fasa-international.org",
+    "is_active": true,
+    "role": "admin"
+}
